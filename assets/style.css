@@ -1,11 +1,25 @@
 body {
-	background-color: #efeee7;
+	/*background-color: #efeee7;*/
 	padding: 0;
 	margin: 0;
 	font-family: "Georgia", "Times New Roman", Times, serif;
 	font-size: 18px;
 	line-height: 150%;
 	height: 100%;
+	/* This and all other gradients created at: */
+	/* http://ie.microsoft.com/testdrive/graphics/cssgradientbackgroundmaker/ */
+	/* IE10 Consumer Preview */ 
+	background-image: url(pattern.png), -ms-linear-gradient(left, #efeee7 0%, #000000 100%);
+	/* Mozilla Firefox */ 
+	background-image: url(pattern.png), -moz-linear-gradient(left, #efeee7 0%, #000000 100%);
+	/* Opera */ 
+	background-image: url(pattern.png), -o-linear-gradient(left, #efeee7 0%, #000000 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: url(pattern.png), -webkit-gradient(linear, left top, left bottom, color-stop(0, #efeee7), color-stop(1, #000000));
+	/* Webkit (Chrome 11+) */ 
+	background-image: url(pattern.png), -webkit-linear-gradient(left, #efeee7 0%, #000000 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: url(pattern.png), linear-gradient(to right, #efeee7 0%, #000000 100%);
 }
 
 h1 {
@@ -54,6 +68,7 @@ p {
     height: 40px;
     position: fixed;
 	bottom: 0;
+	background-color: #efeee7;
 }
 
 .footer {
